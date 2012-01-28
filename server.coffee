@@ -14,4 +14,11 @@ app.configure 'development', ->
 app.get '/', (req, res) ->
   res.send 'Hello World'
 
+app.get '/twilio.xml', (req, res) ->
+  res.contentType('application/xml')  
+  res.send """
+<?xml version="1.0" encoding="UTF-8" ?>
+<Say>Hello Flying Spaghetti Monster !</Say>
+
+"""
 app.listen 8000
