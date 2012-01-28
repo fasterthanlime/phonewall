@@ -23,6 +23,7 @@
 
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- end CSS-->
 
@@ -41,11 +42,13 @@
     </header>
     <div id="main" role="main">
 
-      <h2>Contrôle phoneWall</h2>
+      <h2><span class="icon">S</span> Contrôle phoneWall</h2>
+
+      <hr>
 
       <table class="box">
         <tr>
-          <th colspan=2>Vos numéros</th>
+          <th colspan=2><span class="icon">²</span> Vos numéros</th>
         </tr>
 
         <tr>
@@ -63,6 +66,30 @@
           <td><input disabled=true type="tel" value="+33 6 13 28 92 16"></td>
         </tr>
       </table>
+
+      <hr>
+
+      <table class="box">
+        <tr>
+          <th colspan=2><span class="icon">²</span> Redirections vers "Fixe"</th>
+        </tr>
+
+        <tr>
+          <td>Numéro principal</td>
+          <td><input disabled=true type="tel" value="+33 4 50 41 41 41"></td>
+        </tr>
+  
+        <tr>
+          <td>Fixe</td>
+          <td><input disabled=true type="tel" value="+33 4 50 41 71 21"></td>
+        </tr>
+
+        <tr>
+          <td>Portable</td>
+          <td><input disabled=true type="tel" value="+33 6 13 28 92 16"></td>
+        </tr>
+      </table>
+
 
     </div>
     <footer>
