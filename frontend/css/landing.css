@@ -32,7 +32,24 @@ body {
 }
 
 #pipolist {
-  margin: 10px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.pipoargument {
+  background-color: #3B3438;
+  color: #D1CFD0;
+  height: 150px;
+}
+
+.pipoargument h3 {
+  color: #F2EDF0;
+  text-align: center;
+}
+
+.pipoargument p {
+  padding: 10px;
+  text-align: justify;
 }
 
 /* Call to action */
