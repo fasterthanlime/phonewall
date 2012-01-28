@@ -18,11 +18,6 @@ app.configure 'development', ->
 app.get '/', (req, res) ->
   res.render __dirname + '/frontend/pipotron.html', { layout: false }
 
-app.get '/twilio/api/index.xml', (req, res) ->
-  res.contentType('application/xml')  
-  res.send """
-<?xml version="1.0" encoding="UTF-8" ?>
-<Say>Hello Flying Spaghetti Monster !</Say>
+require('./twilio').init(app)
 
-"""
 app.listen 8000
