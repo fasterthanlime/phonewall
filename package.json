@@ -4,7 +4,10 @@
 
   "dependencies" : {
     "coffee-script" :  "*",
-    "express"       :  "*"
+    "connect"       :  "*",
+    "express"       :  "*",
+    "qs"            :  "*",
+    "mime"          :  "*"
   },
   "engine": {
     "node": ">=0.4"
