@@ -16,7 +16,7 @@ app.configure 'development', ->
   app.use express.errorHandler { dumpExceptions: true, showStack: true }
 
 app.get '/', (req, res) ->
-  res.render __dirname + '/frontend/index.html', { layout: false }
+  res.render __dirname + '/frontend/pipotron.html', { layout: false }
 
 app.get '/twilio.xml', (req, res) ->
   res.contentType('application/xml')  
