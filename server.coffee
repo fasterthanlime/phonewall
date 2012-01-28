@@ -6,13 +6,17 @@ app.configure ->
   app.use express.methodOverride()
   app.use express.bodyParser()
   app.use app.router
+  app.register '.html', {
+    compile: (str, options) ->
+      (locals) -> str
+  }
 
 app.configure 'development', ->
   app.use express.static(__dirname + '/frontend')
   app.use express.errorHandler { dumpExceptions: true, showStack: true }
-  
+
 app.get '/', (req, res) ->
-  res.send 'Hello World'
+  res.render __dirname + '/frontend/index.html', { layout: false }
 
 app.get '/twilio.xml', (req, res) ->
   res.contentType('application/xml')  
