@@ -76,4 +76,6 @@ body {
 }
 .button:hover {
   background: #9e0c0c;
+  text-decoration: none;
+  color: #ffffff;
 }
