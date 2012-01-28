@@ -1,0 +1,13 @@
+{
+  "name": "phonewall",
+  "version": "0.1.0",
+
+  "dependencies" : {
+    "coffee-script" :  "*",
+    "express"       :  "*"
+  },
+  "engine": {
+    "node": ">=0.4"
+  }
+}
+
