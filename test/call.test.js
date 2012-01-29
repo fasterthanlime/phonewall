@@ -20,6 +20,14 @@ exports.notanuser = function(test) {
       
        test.ok(res.body.indexOf('Reject') != -1)
        test.done(); 		
-	})
+	});
 };
+
+exports.anusermatched = function(test) {
+    api.get(test,'index.xml', {data: {To: 666}}, function(res) {
+	test.ok(res.body.indexOf('Dial') != -1);
+	test.done();
+    })	;
+};
+
 
