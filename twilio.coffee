@@ -2,8 +2,8 @@ exports.init = (app) ->
   app.get '/twilio/api/index.xml', (req, res) ->
  
     call =
-      callSid: req.params.CallSid
-      from:    req.params.From
+      callSid: req.query["CallSid"]
+      from:    req.query["From"]
       dest:    req.query["To"]
       
     res.contentType('application/xml')    
