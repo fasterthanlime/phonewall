@@ -79,6 +79,7 @@ td.then {
   width: 30px;
   height: 30px;
   text-align: center;
+  vertical-align: middle;
   font-size: 1.0em;
   padding-top: 0.1em; 
 }

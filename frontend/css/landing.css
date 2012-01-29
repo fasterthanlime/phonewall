@@ -8,13 +8,21 @@ body {
 }
 
 #subtitle h2 {
+  margin-left: 60px;
+
+  margin-top: 1.3em;
   font-size: 30px;
 }
 
 #subpipo {
-  margin-top: 20px;
-  padding-left: 22px;
+  margin-left: 60px;
+
+  margin-top: 2em;
+  margin-bottom: 3.5em;
+  margin-right: 5em;
+
   font-size: 17px;
+  line-height: 1.5em;
 }
 
 .content {
@@ -23,11 +31,18 @@ body {
 }
 
 #bande {
-  margin-left: 10px;
-  margin-right: 7px;
+  margin-left: 0;
+  margin-right: 0;
   padding-bottom: 20px;
   padding-top: 20px;
-  border-bottom: double gray 3px;
+  border-bottom: simple #ddd 1px;
+
+  background: url('/img/phonebox.jpg');
+  background-position-x: 560px;
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+
+  height: 380px;
 }
 
 #pipolist {
@@ -40,6 +55,10 @@ body {
   color: #D1CFD0;
   height: 10em;
   border-radius: 5px;
+}
+
+.topbar {
+  font-family: "OpenSansLight";
 }
 
 .pipoargument h3 {
@@ -55,14 +74,13 @@ body {
 }
 
 /* Call to action */
-.button {
-  margin-top: 50px;
-  margin-left: 210px;
+.calltoaction {
+  margin-left: 150px;
   text-align: center;
-  font-family: Arial;
+  font-family: "OpenSansSemiBold";
   color: #ffffff;
-  font-size: 25px;
-  padding: 15px;
+  font-size: 2.4em;
+  padding: 0.6em 2em;
   text-decoration: none;
   border-radius: 5px;
   box-shadow: 0px 1px 3px #666666;
@@ -74,13 +92,13 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#f20000, endColorStr=#d40000);
   display:inline-block; /* IE is so silly */
 }
-.button:hover {
+.calltoaction:hover {
   background: #9e0c0c;
   text-decoration: none;
   color: #ffffff;
 }
 
-.button:visited {
+.calltoaction:visited {
   text-decoration: none;
   color: #ffffff;
 }
