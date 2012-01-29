@@ -10,7 +10,7 @@ body {
 #subtitle h2 {
   margin-left: 60px;
 
-  margin-top: 1.3em;
+  margin-top: 1.7em;
   font-size: 30px;
 }
 
@@ -35,26 +35,26 @@ body {
   margin-right: 0;
   padding-bottom: 20px;
   padding-top: 20px;
-  border-bottom: simple #ddd 1px;
+  border-bottom: solid #bbb 1px;
 
   background: url('/img/phonebox.jpg');
   background-position-x: 560px;
-  background-position-y: 40px;
+  background-position-y: 80px;
   background-repeat: no-repeat;
 
-  height: 380px;
+  height: 420px;
 }
 
 #pipolist {
-  margin-top: 25px;
-  margin-left: 10px;
+  background: #222;
+  margin: 0;
 }
 
 .pipoargument {
-  background-color: #3B3438;
+  padding-top: 1.5em;
   color: #D1CFD0;
-  height: 10em;
-  border-radius: 5px;
+  height: 12em;
+  line-height: 1.4em;
 }
 
 .topbar {
@@ -63,14 +63,17 @@ body {
 
 .pipoargument h3 {
   color: #F2EDF0;
-  text-align: center;
-  font-family: "OpenSansSemiBold";
+  text-align: left;
+  font-family: "OpenSansLight";
   font-weight: normal;
+  margin-bottom: 0.7em;
+  padding-left: 20px;
 }
 
 .pipoargument p {
-  padding: 10px;
   text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Call to action */
