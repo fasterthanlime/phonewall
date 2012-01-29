@@ -15,3 +15,11 @@ exports.index = function(test) {
     api.get(test, 'index.xml', { })
 };
 
+exports.notanuser = function(test) {
+	api.get(test,'index.xml', {data: { To: 111 }} , function(res) {
+      
+       test.ok(res.body.indexOf('Reject') != -1)
+       test.done(); 		
+	})
+};
+
