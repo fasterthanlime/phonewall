@@ -84,3 +84,49 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+
+#pricing-row {
+  padding: 20px;
+}
+
+.pricing {
+  background-color: #DBD7D9;
+  border-radius: 10px;
+}
+
+.pricing-options {
+  height: 195px;
+}
+
+.pricing-options ul {
+  list-style-type: none;
+  margin: 0;
+  color: #000000;
+}
+
+.pricing-options li { 
+  background: #DBD7D9; 
+  color: #000000; 
+  padding-left: 50px;
+  padding-top: 10px;
+  height: 30px;
+}
+.pricing-options li:nth-child(odd) { background: #8F8888; color: #ffffff }
+
+.pricing h3 {
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px;
+  background:black;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(12%,#595959), color-stop(25%,#666666), color-stop(39%,#474747), color-stop(50%,#2c2c2c), color-stop(51%,#000000), color-stop(60%,#111111), color-stop(76%,#2b2b2b), color-stop(91%,#1c1c1c), color-stop(100%,#131313)); 
+  background: linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); 
+  color: #ffffff;
+  text-align:center;
+}
+
+.pricing h4 {
+  text-align: center;
+  border-bottom-left-radius: 10px;  
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+}

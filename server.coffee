@@ -18,6 +18,12 @@ app.configure 'development', ->
 app.get '/', (req, res) ->
   res.render __dirname + '/frontend/pipotron.html', { layout: false }
 
+app.get '/pricing', (req, res) -> 
+  res.render __dirname + '/frontend/pricing.html', { layout: false } 
+
+app.get '/about', (req, res) -> 
+  res.render __dirname + '/frontend/about.html', { layout: false } 
+
 require('./twilio').init(app)
 
 app.listen 8000

@@ -1313,6 +1313,12 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   color: #bfbfbf;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
+
+.topbar a:visited {
+  color: #bfbfbf;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); 
+}
+
 .topbar h3 a:hover, .topbar .brand:hover, .topbar ul .active > a {
   background-color: #333;
   background-color: rgba(255, 255, 255, 0.05);
@@ -1435,7 +1441,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   color: #ffffff;
   text-decoration: none;
 }
-.topbar div > ul .active > a, .nav .active > a {
+.topbar div > ul .active > a, .nav .active > a, .nav .active > a:visited,  ul .active > a:visited {
   background-color: #222;
   background-color: rgba(0, 0, 0, 0.5);
 }
