@@ -26,7 +26,7 @@ finduser =  (to, context, callback)  ->
   console.log('calling my mother')
   if to == '+33632249198' 
     callback(true, {})
-  if to == '+33617695517'  
+  else
     callback(null, {num: '+33632249198'})
     
 
