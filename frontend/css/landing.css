@@ -23,7 +23,6 @@ body {
 }
 
 #bande {
-  margin-top: -22px;
   margin-left: 10px;
   margin-right: 7px;
   padding-bottom: 20px;
@@ -39,12 +38,15 @@ body {
 .pipoargument {
   background-color: #3B3438;
   color: #D1CFD0;
-  height: 150px;
+  height: 10em;
+  border-radius: 5px;
 }
 
 .pipoargument h3 {
   color: #F2EDF0;
   text-align: center;
+  font-family: "OpenSansSemiBold";
+  font-weight: normal;
 }
 
 .pipoargument p {
@@ -62,10 +64,8 @@ body {
   font-size: 25px;
   padding: 15px;
   text-decoration: none;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-box-shadow: 0px 1px 3px #666666;
-  -moz-box-shadow: 0px 1px 3px #666666;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px #666666;
   text-shadow: 1px 1px 3px #666666;
   border: solid #d91c71 2px;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#f20000), to(#d40000));

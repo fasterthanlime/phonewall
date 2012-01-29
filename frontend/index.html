@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="fonts/aurulent/stylesheet.css">
   <link rel="stylesheet" href="fonts/opensans/stylesheet.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/landing.css">
   <!-- end CSS-->
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -39,20 +41,27 @@
 
 <body>
 
-  <div id="container">
-    <header>
-    </header>
-    <div id="main" role="main">
+  <div class="topbar">
+    <div class="fill">
+      <div class="container">
+        <a class="brand" href="#">phoneWall</a>
+        <ul class="nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-      <h2><span class="icon">S</span> Contrôle phoneWall</h2>
+  <div class="container">
+    <div class="content">
 
-      <hr>
+    <div class="row" id="bande">
+      <div class="span10" id="subtitle">
+        <h2>Vos numéros</h2>
 
       <table class="box numbers">
-        <tr>
-          <th colspan=2><span class="icon">²</span> Vos numéros</th>
-        </tr>
-
         <tr>
           <td>Numéro principal</td>
           <td>
@@ -60,29 +69,24 @@
             <input disabled=true type="tel" value="+33 4 50 41 41 41">
           </td>
         </tr>
-  
-        <tr>
-          <td>Fixe</td>
-          <td>
-            <span class="user icon">U</span>
-            <input disabled=true type="tel" value="+33 4 50 41 71 21">
-          </td>
-        </tr>
-
-        <tr>
-          <td>Portable</td>
-          <td>
-            <span class="user icon">U</span>
-            <input disabled=true type="tel" value="+33 6 13 28 92 16">
-          </td>
-        </tr>
       </table>
 
-      <hr>
+        <h2>Règles</h2>
 
       <table class="box rules">
-        <tr>
-          <th colspan=2><span class="icon">²</span> Règles</th>
+        <tr class="rule">
+          <td>
+            <span class="user icon">U</span>
+            <input type="tel" value="+33 4 50 41 41 41">
+          </td>
+          <td class="then"><span class="icon">&gt;</span></td>
+          <td>
+            <select name="reaction">
+              <option value="drop">rejeter l'appel</option>
+              <option value="drop">transférer sur Fixe</option>
+              <option value="drop">transférer sur Mobile</option>
+            </select>
+          </td>
         </tr>
 
         <tr class="rule">
@@ -92,37 +96,18 @@
           </td>
           <td class="then"><span class="icon">&gt;</span></td>
           <td>
-            <div class="myselect">
-              <select name="reaction">
-                <option value="drop">rejeter l'appel</option>
-                <option value="drop">transférer sur Fixe</option>
-                <option value="drop">transférer sur Mobile</option>
-              </select>
-            </div>
-          </td>
-        </tr>
-
-        <tr class="rule">
-          <td>
-            <span class="user icon">U</span>
-            <input type="tel" value="+33 4 50 41 41 41">
-          </td>
-          <td class="then"><span class="icon">&gt;</span></td>
-          <td>
-            <div class="myselect">
-              <select name="reaction">
-                <option value="drop">rejeter l'appel</option>
-                <option value="drop">transférer sur Fixe</option>
-                <option value="drop">transférer sur Mobile</option>
-              </select>
-            </div>
+            <select name="reaction">
+              <option value="drop">rejeter l'appel</option>
+              <option value="drop">transférer sur Fixe</option>
+              <option value="drop">transférer sur Mobile</option>
+            </select>
           </td>
         </tr>
 
 
       </table>
 
-
+    </div>
     </div>
     <footer>
 
