@@ -1,3 +1,5 @@
+console.log('lancement ....')
+
 
 express = require('express')
 app = express.createServer()
@@ -29,3 +31,5 @@ require('./twilio').init(app)
 require('./api').init(app)
 
 app.listen 8000
+
+console.log('ça tourne sur http://localhost:8000')
