@@ -95,13 +95,23 @@ body {
 }
 
 .pricing-options {
-  height: 150px;
-  padding: 10px;
+  height: 220px;
 }
 
 .pricing-options ul {
   list-style-type: none;
+  margin: 0;
+  color: #000000;
 }
+
+.pricing-options li { 
+  background: #DBD7D9; 
+  color: #000000; 
+  padding-left: 50px;
+  padding-top: 10px;
+  height: 30px;
+}
+.pricing-options li:nth-child(odd) { background: #8F8888; color: #ffffff }
 
 .pricing h3 {
   border-top-left-radius: 10px;
