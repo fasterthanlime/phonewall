@@ -79,3 +79,8 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+
+.button:visited {
+  text-decoration: none;
+  color: #ffffff;
+}

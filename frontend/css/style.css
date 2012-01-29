@@ -308,10 +308,6 @@ input[type=tel]:hover {
   border: 1px solid #bbb;
 }
 
-input[type=tel]:focus {
-  background: #ddd;
-}
-
 .box button {
   font-size: 0.83em;
   vertical-align: middle;
