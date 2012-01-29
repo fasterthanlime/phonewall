@@ -23,7 +23,7 @@ exports.init = (app) ->
 
 finduser =  (to, context, callback)  ->
   console.log(to)
-  console.log(from)
+  console.log(context.call.from)
   console.log('calling my mother')
   if context.call.from == '+33632249198' 
     callback(true, {})
