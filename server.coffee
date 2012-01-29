@@ -26,4 +26,6 @@ app.get '/about', (req, res) ->
 
 require('./twilio').init(app)
 
+require('./api').init(app)
+
 app.listen 8000
