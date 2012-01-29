@@ -26,9 +26,8 @@ finduser =  (to, context, callback)  ->
   console.log('calling my mother')
   if to == '+33632249198' 
     callback(true, {})
-  else
-    if to == '+33617695517'  
-      callback(null, {num: '+33632249198})
+  if to == '+33617695517'  
+    callback(null, {num: '+33632249198'})
     
 
 findRulesForUserAndCaller = (user, caller, context, callback) ->
@@ -52,7 +51,7 @@ rejectCaller = (context) ->
 redirectCallerToUser = (context) -> 
   res = context.res
   usernum = context.user.num
-  res.contentType('application/xml') 
+  res.contentType('application/xml')
   res.send """
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
