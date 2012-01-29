@@ -7,10 +7,11 @@ exports.init = (app) ->
       dest:    req.get('To')
       
     res.contentType('application/xml')    
-    finduser =  (to, callback)  -> 
+    finduser =  (to, callback)  -> callback(true,null)
     
     callback = (err, user) -> 
       if err
+        res.contentType('application/xml') 
         res.send """
           <?xml version="1.0" encoding="UTF-8"?>
           <Response>
