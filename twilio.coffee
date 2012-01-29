@@ -43,7 +43,7 @@ rejectCaller = (context) ->
   res.send """
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-     <Say voice="woman" language="en-gb" loop="2">Hello Flying Spaghetti Monster !</Say>
+     <Say voice="woman" language="en-gb">Hello Flying Spaghetti Monster !</Say>
      <Reject />
     </Response>
   """
