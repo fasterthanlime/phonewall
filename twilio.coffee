@@ -23,11 +23,8 @@ exports.init = (app) ->
 
 finduser =  (to, context, callback)  ->
   console.log(to)
-  if to == '666'  
-    console.log('calling my mother')
-    callback(null, {num: +33632249198})
-  else  
-    callback(true, {})
+  console.log('calling my mother')
+  callback(null, {num: +33632249198})
     
 
 findRulesForUserAndCaller = (user, caller, context, callback) ->
